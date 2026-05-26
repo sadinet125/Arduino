@@ -13,7 +13,7 @@ void setup(){
 
   
 void loop(){
-  leitura_potenciometro = analogRead(potenciometro);
+  leitura_potenciometro = analogRead(potenciometro_pin);
   anguloservo = map(leitura_potenciometro, 0, 1023, 0, 180);
   meu_servo.write(anguloservo);
 }
